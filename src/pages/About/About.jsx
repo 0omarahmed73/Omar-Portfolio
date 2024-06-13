@@ -75,7 +75,7 @@ function About() {
                 Faculty Of Engineering Shoubra - Benha University (2019-2024)
               </li>
               <li style={{ listStyle: "none" }}>
-                Bachelor of Science in Computer Engineering (Grade : Excellent),
+                Bachelor of Science in Computer Engineering
               </li>
               <li style={{ listStyle: "none" }}>
                 Graduation Project: E-Pharmacy System Using React JS (Grade :

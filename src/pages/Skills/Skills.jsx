@@ -18,7 +18,7 @@ import { motion } from "framer-motion";
 import { MdEmail } from "react-icons/md";
 import useDocumentTitle from "../../hooks/useDocumentTitle";
 import Slider from "react-infinite-logo-slider";
-import { SiAdobexd, SiFlutter, SiJavascript } from "react-icons/si";
+import { SiAdobexd, SiFlutter, SiJavascript, SiPhp } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 
 function Skills() {
@@ -71,58 +71,117 @@ function Skills() {
               type={"h1"}
               className={`glitch text-center`}
               data-glitch="glitch"
-              style={{marginBottom : '30px'}}
+              style={{ marginBottom: "30px" }}
             />
-            <Slider
-              duration={20}
-              pauseOnHover={true}
-              blurBorders={false}
-              blurBoderColor={"#fff"}
-              className={styles.skills_container}
-            >
-              <Slider.Slide className={styles.skill}>
-                <div className={`${styles.body} d-flex flex-columngap-2`}>
-                  <FaHtml5 size={40} />
-                  <h3>HTML</h3>
-                </div>
-              </Slider.Slide>
-              <Slider.Slide className={styles.skill}>
-                <div className={`${styles.body} d-flex flex-columngap-2`}>
-                  <FaCss3  size={40} />
-                  <h3>CSS</h3>
-                </div>
-              </Slider.Slide>
-              <Slider.Slide className={styles.skill}>
-                <div className={`${styles.body} d-flex flex-columngap-2`}>
-                  <SiJavascript   size={40} />
-                  <h3>JS</h3>
-                </div>
-              </Slider.Slide>
-              <Slider.Slide className={styles.skill}>
-                <div className={`${styles.body} d-flex flex-columngap-2`}>
-                  <FaReact  size={40} />
-                  <h3>React JS</h3>
-                </div>
-              </Slider.Slide>
-              <Slider.Slide className={styles.skill}>
-                <div className={`${styles.body} d-flex flex-columngap-2`}>
-                  <SiFlutter size={40} />
-                  <h3>Flutter</h3>
-                </div>
-              </Slider.Slide>
-              <Slider.Slide className={styles.skill}>
-                <div className={`${styles.body} d-flex flex-columngap-2`}>
-                  <FaNodeJs  size={40} />
-                  <h3>Node JS</h3>
-                </div>
-              </Slider.Slide>
-              <Slider.Slide className={styles.skill}>
-                <div className={`${styles.body} d-flex flex-columngap-2`}>
-                  <SiAdobexd   size={40} />
-                  <h3>Adobe XD</h3>
-                </div>
-              </Slider.Slide>
-            </Slider>
+            {dimensions.width < 769 ? (
+              <Row className={styles.skills_container_mobile}>
+                <Col className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <FaHtml5 size={40} />
+                    <h3>HTML</h3>
+                  </div>
+                </Col>
+                <Col className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <FaCss3 size={40} />
+                    <h3>CSS</h3>
+                  </div>
+                </Col>
+                <Col className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <SiJavascript size={40} />
+                    <h3>JS</h3>
+                  </div>
+                </Col>
+                <Col className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <FaReact size={40} />
+                    <h3>React JS</h3>
+                  </div>
+                </Col>
+                <Col className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <SiFlutter size={40} />
+                    <h3>Flutter</h3>
+                  </div>
+                </Col>
+                <Col className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <FaNodeJs size={40} />
+                    <h3>Node JS</h3>
+                  </div>
+                </Col>
+                <Col className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <SiPhp size={40} />
+                    <h3>PHP</h3>
+                  </div>
+                </Col>
+                <Col className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <SiAdobexd size={40} />
+                    <h3>Adobe XD</h3>
+                  </div>
+                </Col>
+              </Row>
+            ) : (
+              <Slider
+                duration={20}
+                pauseOnHover={true}
+                blurBorders={false}
+                blurBoderColor={"#fff"}
+                className={styles.skills_container}
+              >
+                <Slider.Slide className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <FaHtml5 size={40} />
+                    <h3>HTML</h3>
+                  </div>
+                </Slider.Slide>
+                <Slider.Slide className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <FaCss3 size={40} />
+                    <h3>CSS</h3>
+                  </div>
+                </Slider.Slide>
+                <Slider.Slide className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <SiJavascript size={40} />
+                    <h3>JS</h3>
+                  </div>
+                </Slider.Slide>
+                <Slider.Slide className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <FaReact size={40} />
+                    <h3>React JS</h3>
+                  </div>
+                </Slider.Slide>
+                <Slider.Slide className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <SiFlutter size={40} />
+                    <h3>Flutter</h3>
+                  </div>
+                </Slider.Slide>
+                <Slider.Slide className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <FaNodeJs size={40} />
+                    <h3>Node JS</h3>
+                  </div>
+                </Slider.Slide>
+                <Slider.Slide className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <SiPhp size={40} />
+                    <h3>PHP</h3>
+                  </div>
+                </Slider.Slide>
+                <Slider.Slide className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <SiAdobexd size={40} />
+                    <h3>Adobe XD</h3>
+                  </div>
+                </Slider.Slide>
+              </Slider>
+            )}
           </Col>
         </motion.div>
       )}

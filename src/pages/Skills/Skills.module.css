@@ -45,20 +45,18 @@
   justify-content: center;
   align-items: center;
   margin-left: 15px;
-  padding: 10px 20px;
+  padding: 20px 20px;
   border-radius: 20px;
-  min-width: 100px !important;
+  min-width: 200px !important;
   background-color: #023047;
+  
   color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   cursor: pointer;
   transition: 0.5s;
 
   &:hover {
-    border-radius: 20px;
-    transform: scale(1.1);
     background-color: #000;
-    color: #fff;
   }
 }
 
@@ -77,5 +75,15 @@
   }
 
   flex-direction: row;
+
+}
+
+.skills_container_mobile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 
 }
