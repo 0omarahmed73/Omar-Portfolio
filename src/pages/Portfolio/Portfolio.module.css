@@ -1,0 +1,63 @@
+.img {
+  width: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #000;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @media screen and (max-width: 670px) {
+    & {
+      width: 200px;
+    }
+  }
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: start;
+  align-items: center;
+}
+
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: start;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+  &::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+

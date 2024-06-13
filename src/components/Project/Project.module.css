@@ -1,0 +1,27 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 10px 20px;
+  border-radius: 20px;
+  min-width: 100px !important;
+  background-color: #023047;
+  color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    border-radius: 20px;
+    background-color: #000;
+  }
+}
+
+.project_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}

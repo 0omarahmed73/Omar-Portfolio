@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+:root {
+  --mainColor: #000;
+}
+
+body {
+  background-color: var(--mainColor);
+  font-family: "Poppins", sans-serif !important;
+  overflow-x: hidden;
+}
+
+.active {
+  color: #000 !important;
+}
+
+
+.glitch {
+  position: relative;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  letter-spacing: 5px;
+  z-index: 1;
+
+  @media screen and (max-width: 670px) {
+    & {
+      font-size: 40px;
+    }
+  }
+}
+
+
+.show {
+  opacity: 1 !important;
+  transition: 0.5s;
+}
+
+.hide {
+  opacity: 0 !important;
+  transition: 0.5s;
+}
+
+.w-0 {
+  width: 0 !important;
+  transition: 0.5s;
+}
+
+.w-1 {
+  width: 50px !important;
+  transition: 0.5s;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  margin-top: 10px;
+  font-weight: bold;
+  @media screen and (max-width: 440px) {
+    & {
+      font-size: 15px;
+    }
+  }
+}
+
+/*  */
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(farthest-side, #000000 94%, #0000) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%, #000000);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: l13 1s infinite linear;
+}
+
+@keyframes l13 {
+  100% {
+    transform: rotate(1turn)
+  }
+}
+
