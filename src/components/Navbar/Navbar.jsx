@@ -28,14 +28,13 @@ function Navbar() {
         <AnimatePresence>
           {newClass && (
             <motion.div
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
+              initial={{ opacity: 0}}
+              animate={{ opacity: 1}}
+              exit={{ opacity : 0}}
               transition={{
                 type: "spring",
-                stiffness: 500,
-                damping: 30,
-                duration: 0.3,
+                stiffness: 200,
+                damping: 20,
               }}
               className={styles.navLinks_small}
             >

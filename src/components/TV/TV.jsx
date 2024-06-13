@@ -4,7 +4,7 @@ function TV({ image }) {
   return (
     <div className={styles.tv}>
       <div className={styles["tv-screen"]}>
-        <img src={image} alt="Image inside TV" />
+        <img src={image} alt="Image inside TV" loading="lazy" />
       </div>
     </div>
   );
