@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 import useDocumentTitle from "../../hooks/useDocumentTitle";
 import TV from "../../components/TV/TV";
 import Project from "../../components/Project/Project";
+import { useImage } from "react-image";
 function Portfolio() {
   const dimensions = useWindowSize();
   const [loading, setLoading] = useState(true);
@@ -49,6 +50,9 @@ function Portfolio() {
   ];
   const [imageIndex, setImageIndex] = useState(7);
   console.log(imageIndex);
+  const src = useImage({
+    srcList: images,
+  });
   useDocumentTitle("Portfolio");
   return (
     <motion.div className="container d-flex justify-content-center align-items-center">

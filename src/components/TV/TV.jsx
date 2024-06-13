@@ -1,10 +1,16 @@
 import React from "react";
 import styles from "./TV.module.css";
+import { Img } from "react-image";
 function TV({ image }) {
   return (
     <div className={styles.tv}>
       <div className={styles["tv-screen"]}>
-        <img src={image} alt="Image inside TV" loading="lazy" />
+        <Img
+          src={image}
+          alt="tv"
+          className={styles["tv-image"]}
+          loader={<div className={`loader`} />}
+        />
       </div>
     </div>
   );
