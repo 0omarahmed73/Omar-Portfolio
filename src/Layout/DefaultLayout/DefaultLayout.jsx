@@ -11,6 +11,7 @@ function DefaultLayout() {
       <Container fluid={true} className={styles.container22}>
         <Navbar></Navbar>
         <Container
+        fluid={true}
           className={styles.content}
           onClick={() => setNewClass(false)}
         >
