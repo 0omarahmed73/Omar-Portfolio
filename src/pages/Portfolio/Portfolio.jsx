@@ -49,6 +49,13 @@ function Portfolio() {
     image8,
     "https://i.pinimg.com/736x/71/ac/e4/71ace42dbbc248cc9041d07b71ce26d5.jpg",
   ];
+  // Preload images
+  useEffect(() => {
+    images.forEach((img) => {
+      const imgObj = new Image();
+      imgObj.src = img;
+    });
+  }, [images]);
   const [imageIndex, setImageIndex] = useState(8);
   console.log(imageIndex);
   useDocumentTitle("Portfolio");
@@ -96,7 +103,7 @@ function Portfolio() {
                 link="https://main--prayertimes0omar.netlify.app/ar"
                 functions={() => setImageIndex(1)}
               />
-                <Project
+              <Project
                 title="E-Book Project"
                 link="https://byt-elhekma-library.netlify.app/"
                 functions={() => setImageIndex(7)}
