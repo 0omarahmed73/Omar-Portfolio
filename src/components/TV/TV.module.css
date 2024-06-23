@@ -1,5 +1,5 @@
 .tv {
-  width: 330px  !important;
+  width: 330px !important;
   height: 230px;
   background: #333;
   border: 15px solid #555;
@@ -30,9 +30,13 @@
   border-radius: 10px;
 }
 
-.tv-screen img {
+.tv-image {
+  background-image: var(--image-url) !important;
   width: 100%;
+  background-position: center;
+  background-size: contain;
+  transition: 0.5s;
+  background-repeat: no-repeat;
   height: 100%;
   object-fit: contain;
-  /* object-position: center; */
 }
