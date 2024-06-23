@@ -9,7 +9,6 @@ function TV({ image }) {
           style={{ "--image-url": `url(${image})` }}
           className={styles["tv-image"]}
         >
-          Hello
         </div>
       </div>
     </div>
