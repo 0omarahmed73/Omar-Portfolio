@@ -7,6 +7,7 @@ import image5 from "../../assets/project5.png";
 import image6 from "../../assets/project6.png";
 import image7 from "../../assets/project7.png";
 import image8 from "../../assets/project8.png";
+import image9 from "../../assets/image8.png";
 import styles from "./Portfolio.module.css";
 import { Col } from "react-bootstrap";
 import { Typewriter } from "../../components/TypeWriter";
@@ -48,6 +49,7 @@ function Portfolio() {
     image7,
     image8,
     "https://i.pinimg.com/736x/71/ac/e4/71ace42dbbc248cc9041d07b71ce26d5.jpg",
+    image9,
   ];
   // Preload images
   useEffect(() => {
@@ -102,6 +104,11 @@ function Portfolio() {
                 title="Prayer Times"
                 link="https://main--prayertimes0omar.netlify.app/ar"
                 functions={() => setImageIndex(1)}
+              />
+              <Project
+                title="Weather App Project"
+                link="https://weather-app-last-update.netlify.app/"
+                functions={() => setImageIndex(9)}
               />
               <Project
                 title="E-Book Project"
