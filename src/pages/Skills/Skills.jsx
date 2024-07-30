@@ -3,6 +3,7 @@ import styles from "./Skills.module.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { Typewriter } from "../../components/TypeWriter";
 import {
+  FaBootstrap,
   FaCss3,
   FaGithubSquare,
   FaHtml5,
@@ -10,6 +11,7 @@ import {
   FaNodeJs,
   FaPhoneAlt,
   FaReact,
+  FaSass,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { CustomIcon } from "../../components/CustomIcon/CustomIcon";
@@ -20,6 +22,8 @@ import useDocumentTitle from "../../hooks/useDocumentTitle";
 import Slider from "react-infinite-logo-slider";
 import { SiAdobexd, SiFlutter, SiJavascript, SiPhp } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
+import { BiLogoTypescript } from "react-icons/bi";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 function Skills() {
   const dimensions = useWindowSize();
@@ -113,8 +117,26 @@ function Skills() {
                 </Col>
                 <Col className={styles.skill}>
                   <div className={`${styles.body} d-flex flex-columngap-2`}>
-                    <SiPhp size={40} />
-                    <h3>PHP</h3>
+                    <BiLogoTypescript size={40} />
+                    <h3>Typescript</h3>
+                  </div>
+                </Col>
+                <Col className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <FaSass size={40} />
+                    <h3>Sass</h3>
+                  </div>
+                </Col>
+                <Col className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <RiTailwindCssFill size={40} />
+                    <h3>Tailwind</h3>
+                  </div>
+                </Col>
+                <Col className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <FaBootstrap size={40} />
+                    <h3>Bootstrap</h3>
                   </div>
                 </Col>
                 <Col className={styles.skill}>
@@ -170,8 +192,26 @@ function Skills() {
                 </Slider.Slide>
                 <Slider.Slide className={styles.skill}>
                   <div className={`${styles.body} d-flex flex-columngap-2`}>
-                    <SiPhp size={40} />
-                    <h3>PHP</h3>
+                    <BiLogoTypescript size={40} />
+                    <h3>Typescript</h3>
+                  </div>
+                </Slider.Slide>
+                <Slider.Slide className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <FaSass size={40} />
+                    <h3>Sass</h3>
+                  </div>
+                </Slider.Slide>
+                <Slider.Slide className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <RiTailwindCssFill size={40} />
+                    <h3>Tailwind</h3>
+                  </div>
+                </Slider.Slide>
+                <Slider.Slide className={styles.skill}>
+                  <div className={`${styles.body} d-flex flex-columngap-2`}>
+                    <FaBootstrap size={40} />
+                    <h3>Bootstrap</h3>
                   </div>
                 </Slider.Slide>
                 <Slider.Slide className={styles.skill}>
