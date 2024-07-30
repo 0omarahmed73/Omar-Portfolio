@@ -101,7 +101,7 @@ function Home() {
               <CustomIcon to="tel:+201553583288">
                 <FaPhoneAlt size={20} />
               </CustomIcon>
-              <CustomIcon to="https://drive.google.com/file/d/1ddOoQPk0dAn3Fq09TA4sLiuu9lQ7jODG/view">
+              <CustomIcon to="https://drive.google.com/file/d/1SW3B6ncVCS3bh5gn8T139vpVjEYBBjTr/view?usp=sharing">
                 <p
                   style={{
                     all: "unset",
