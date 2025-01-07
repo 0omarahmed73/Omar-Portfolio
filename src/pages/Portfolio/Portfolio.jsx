@@ -11,6 +11,7 @@ import image9 from "../../assets/image8.png";
 import image10 from "../../assets/United-Elevators.jpg";
 import image11 from "../../assets/Natch-Beach.jpg";
 import image12 from "../../assets/NOB.jpg";
+import image13 from "../../assets/sarahaApp.jpg";
 import styles from "./Portfolio.module.css";
 import { Col } from "react-bootstrap";
 import { Typewriter } from "../../components/TypeWriter";
@@ -56,6 +57,7 @@ function Portfolio() {
     image10,
     image11,
     image12,
+    image13,
   ];
   // Preload images
   useEffect(() => {
@@ -117,6 +119,11 @@ function Portfolio() {
                 functions={() => setImageIndex(12)}
               />
               <Project
+                title="Saraha App - Express MongoDB NodeJs App" 
+                link="https://github.com/omarahmedpl/sarahaApp"
+                functions={() => setImageIndex(13)}
+              />
+              <Project
                 title="Quran Project"
                 link="https://holyquran0omar.netlify.app/"
                 functions={() => setImageIndex(0)}
@@ -135,11 +142,6 @@ function Portfolio() {
                 title="E-Book Project"
                 link="https://byt-elhekma-library.netlify.app/"
                 functions={() => setImageIndex(7)}
-              />
-              <Project
-                title="Memory Game"
-                link="https://memorygame0omar.netlify.app/"
-                functions={() => setImageIndex(2)}
               />
               <Project
                 title="Pen's Inspiration"

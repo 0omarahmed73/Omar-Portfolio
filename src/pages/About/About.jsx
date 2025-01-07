@@ -81,6 +81,9 @@ function About() {
                 Graduation Project: E-Pharmacy System Using React JS (Grade :
                 A+)
               </li>
+              <li style={{ listStyle: "none" }}>
+                Backend Diploma at Route Academy (Oct 2024 - Present)
+              </li>
             </p>
             <h1
               className={`${dimensions.width <= 990 ? "text-center" : ""}`}

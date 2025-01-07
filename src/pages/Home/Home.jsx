@@ -67,9 +67,7 @@ function Home() {
               data-glitch="glitch"
             />
             <Typewriter
-              text={
-                "Frontend Developer | Odoo Developer | Software Engineer"
-              }
+              text={"Full-Stack Developer | Odoo Developer | Software Engineer"}
               deleting={false}
               speed={20}
               type={"p"}
@@ -78,7 +76,7 @@ function Home() {
             />
             <Typewriter
               text={`
-Experienced in JavaScript, React.js, Vue.js, HTML5, CSS3, SASS, Tailwind CSS, Bootstrap, and Odoo Framework. Proven expertise in developing responsive, scalable interfaces, integrating APIs, optimizing website performance, and ensuring SEO best practices. Proficient in UI/UX design, clean code practices, cross-browser compatibility, and performance optimization. Dedicated to delivering scalable, maintainable, and efficient solutions with a commitment to continuous learning and collaboration.`}
+Experienced in JavaScript, React.js, Vue.js, Node.js, Express.js, MySQL, MongoDB, HTML5, CSS3, SASS, Tailwind CSS, Bootstrap, and the Odoo Framework. Proven expertise in developing responsive, scalable interfaces, building RESTful APIs, integrating databases, optimizing website performance, and ensuring SEO best practices. Proficient in UI/UX Development, clean code practices, cross-browser compatibility, and performance optimization. Dedicated to delivering scalable, maintainable, and efficient solutions with a commitment to continuous learning and collaboration.`}
               deleting={false}
               speed={15}
               type={"p"}
